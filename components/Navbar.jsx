@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import {CiSearch} from 'react-icons/ci'
 import {CgShoppingCart} from 'react-icons/cg'
-import logo from '../src/assets/Logo.png'
+import logo from '../src/assets/logo.jpeg'
 import Link from 'next/link'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { useStateContext } from '../context/StateContext';
@@ -15,13 +15,17 @@ const Navbar = ({Searchproducts}) => {
   return (
     <nav>
       <Link href='/'>
-        <Image src={logo} width={140} height={25} alt='logo' />
+        <Image src={logo} width={70} height={50} alt='logo' />
       </Link>
       <ul className='nav-links'>
-        <Link href='/female'><li>Female</li></Link>
-        <Link href='/male'><li>Male</li></Link>
-        <Link href='/kids'><li>Kids</li></Link>
-        <Link href='/products'><li>All Products</li></Link>
+      <Link href='/words'><li>Words</li></Link>
+      <Link href='/slogan'><li>Slogan</li></Link>
+      <Link href='/shapes-symbols'><li>Shapes and Symbols</li></Link>
+      <Link href='/portrait'><li>Portrait</li></Link>
+      <Link href='/date'><li>Date</li></Link>
+      <Link href='/logo'><li>Logo</li></Link>
+      <Link href='/number'><li>Number</li></Link>
+
       </ul>
 
         <div className='search-bar'>

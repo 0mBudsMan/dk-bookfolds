@@ -31,7 +31,6 @@ const Footer = () => {
         <div className='footer-links'>
           <h3>Support</h3>
           <ul>
-            <li>Support Carrer</li>
             <li>24h Service</li>
             <li>Quick Chat</li>
           </ul>
@@ -47,9 +46,9 @@ const Footer = () => {
       </div>
 
       <div className='copyright'>
-        <p>Copyright © 2022 Dine Market</p>
-        <p>Design by. <span>Weird Design Studio</span></p>
-        <p>Code by. <span>shabrina12 on github</span></p>
+        <p>Copyright © 2025 Dhruv Karena</p>
+        <p>Design by. <span>yours truly</span></p>
+        <p>Code by. <span>0mBudsMan & aadi_ish on github</span></p>
       </div>
     </footer>
   )

@@ -12,7 +12,7 @@ const Home = ({products}) => {
   return (
     <>
       <HeroBanner />
-      <EventsBanner />
+      {/* <EventsBanner /> */}
 
       <div className='products-outer-container'>
         <div className='subtitle'>

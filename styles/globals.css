@@ -141,15 +141,17 @@ nav input {
   gap: 2.5rem;
 }
 .header-content span {
-  background-color: #e1edff;
+  /* background-color: #FFECE3; */
+
   height: 40px;
   width: 120px;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: blue;
+  /* color: blue; */
   font-weight: 600;
+  margin: 10px;
 }
 .header-content h1 {
   font-weight: 700;

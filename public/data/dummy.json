@@ -1,16 +1,18 @@
 [
     {
-        "category": "Male",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "dimensions": "x*y",
+        "category": "Portrait",
+        "details": ["Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
+        "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."],
+        "dimensions": "23*15",
         "care": [
-            "Hand wahs using cold water",
-            "Do not using bleach.",
-            "Hang it to dry."
+            "Use clean, dry hands and avoid overhandling.",
+            "Keep away from sunlight, moisture, and high-traffic areas.",
+            "Dust gently with a soft brush; avoid wet cleaning.",
+            "Store upright in a dry, dust-free space."
         ],
         "img": "homepage-1.webp",
-        "name": "Raylan Sweatshirt",
-        "priceoriginal":"198",
-        "pricediscounted": "115"
+        "name": "Customized Portrait",
+        "priceoriginal":"9999",
+        "pricediscounted": "7999"
     }
 ]

@@ -16,7 +16,7 @@ const useStateContext = () => {
 };
 
 const ClassyProductDetails = ({ product }) => {
-  const { name, details, care, priceoriginal, pricediscounted, img } = product;
+  const { name, details, care, priceoriginal, pricediscounted, img, dimensions } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd } = useStateContext();
 
@@ -76,16 +76,27 @@ const ClassyProductDetails = ({ product }) => {
             borderBottom: '2px solid #000',
             paddingBottom: '10px',
           }}>{name}</h1>
-          <div style={{ marginBottom: '30px' }}>
-            <h3 style={{ marginBottom: '15px', fontSize: '1.2em' }}>Select Size</h3>
-            <div style={{ display: 'flex', gap: '10px' }}>
-              {['XS', 'S', 'M', 'L', 'XL'].map(size => (
-                <button key={size} style={hoverButtonStyle}>
-                  {size}
-                </button>
-              ))}
-            </div>
-          </div>
+          <div style={{ marginBottom: '30px', 
+  border: '1px solid #000', 
+  padding: '20px', 
+  display: 'inline-block'
+}}>
+  <h3 style={{ 
+    marginBottom: '15px', 
+    fontSize: '1.2em', 
+    borderBottom: '1px solid #000', 
+    paddingBottom: '10px' 
+  }}>
+    Dimensions
+  </h3>
+  <p style={{ 
+    fontSize: '1.1em', 
+    fontFamily: '"Courier New", monospace', 
+    letterSpacing: '0.5px' 
+  }}>
+    {dimensions}
+  </p>
+</div>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px' }}>
             <h3 style={{ marginRight: '20px', fontSize: '1.2em' }}>Quantity: </h3>
             <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #000' }}>
@@ -147,7 +158,9 @@ const ClassyProductDetails = ({ product }) => {
           marginBottom: '30px',
         }}>
           <h3 style={{ marginBottom: '15px', fontSize: '1.4em' }}>Product Details</h3>
-          <p style={{ lineHeight: '1.8', fontSize: '1.1em' }}>{details}</p>
+          {details.map((desc, index) => (
+            <p key={index} style={{ lineHeight: '1.8', fontSize: '1.1em', marginBottom: '10px' }}>{desc}</p>
+          ))}
         </div>
         <div style={{ 
           padding: '30px', 

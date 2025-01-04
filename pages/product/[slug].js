@@ -179,7 +179,7 @@ const ClassyProductDetails = ({ product }) => {
 };
 
 export const getStaticProps = async () => {
-  const filePath = path.join(process.cwd(), 'data', 'dummy.json');
+    const filePath = path.join(process.cwd(), 'public', 'data', 'dummy.json');
   const jsonData = await fs.readFile(filePath, 'utf-8');
   const data = JSON.parse(jsonData);
 

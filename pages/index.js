@@ -8,7 +8,43 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const Home = ({products}) => {
+const Home = () => {
+  const products = [{
+    "image": "/assets/homepage1.jpg",
+    "name" : "Good Vibes Only",
+    "slug" : {
+      "_type": "slug",
+      "current": "gvo-bookfold"
+    },
+    "price" : "6999",
+  },
+  {
+    "image": "/assets/homepage4.jpg",
+    "name" : "Starbucks Bookfold (30CM)",
+    "slug" : {
+      "_type": "slug",
+      "current": "starbucks-bookfold"
+    },
+    "price" : "1000",
+  },
+  {
+    "image": "/assets/homepage3.jpg",
+    "name" : "Good Vibes Only",
+    "slug" : {
+      "_type": "slug",
+      "current": "gvo-bookfold"
+    },
+    "price" : "1000",
+  },
+  {
+    "image": "/assets/homepage2.jpg",
+    "name" : "Good Vibes Only",
+    "slug" : {
+      "_type": "slug",
+      "current": "gvo-bookfold"
+    },
+    "price" : "1000",
+  }]
   return (
     <>
       <HeroBanner />

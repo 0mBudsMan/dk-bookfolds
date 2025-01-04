@@ -1,37 +1,32 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import Image from 'next/image'
 import img from '../src/assets/Home.jpg'
 import Link from 'next/link'
 
 const FeaturesBanner = () => {
+  const [marginRight, setMarginRight] = useState('100px');
+  const [imageWidth, setImageWidth] = useState(300);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setMarginRight(window.innerWidth > 1024 ? '150px' : '100px');
+        setImageWidth(window.innerWidth > 1024 ? 300 : 300);
+      };
+
+      window.addEventListener('resize', handleResize);
+      handleResize(); 
+
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
   return (
     <section className='features-section'>
       <div className='title'>
-        <h1 style={{"margin-right" : "150px"}}>Artful Creations from Every Fold</h1>
+        <h1 style={{marginRight}}>Artful Creations from Every Fold</h1>
       </div>
 
       <div className='content'>
-        {/* <div className='left'>
-          <div className="feature-background">
-            Different from others
-          </div>
-          <div>
-            <h3>Using Good Quality Materials</h3>
-            <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-          </div>
-          <div>
-            <h3>100% Handmade Products</h3>
-            <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-          </div>
-          <div>
-            <h3>Modern Fashion Design</h3>
-            <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-          </div>
-          <div>
-            <h3>Discount for Bulk Orders</h3>
-            <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-          </div>
-        </div>  */}
         <div className='left'>
           <div className="feature-background">
             Unique Creations, Tailored for You
@@ -55,14 +50,14 @@ const FeaturesBanner = () => {
         </div>
               
 
-        <div className='right'>
-        <Image src={img} width={750} height={400} style={{"borderRadius" : "5%"}} alt='Folded Book Art' />
-        <div>
+        <div className='right' style={{"display" : "flex" , "flexDirection" : "column" }}>
+        <Image src={img} width={imageWidth} height={350} style={{"borderRadius" : "5%"}} alt='Folded Book Art' />
+        <div style={{"display" : "flex" , "flexDirection" : "column" , "alignItems" : "center" , "width" : "100%"}}>
           <p>
             This piece is meticulously crafted where every fold is a labor of love. Using premium-quality, we ensure each creation is a timeless work of art, perfect for any space or occasion.
           </p>
           <Link href={'/products'}>
-            <button className='btn' type='button'>Explore Our Collection</button>
+            <button className='btn' type='button' style={{"width" : "100px"}}>Explore Our Collection</button>
           </Link>
         </div>
       </div>

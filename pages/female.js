@@ -15,7 +15,7 @@ const female = ({AllFemaleProducts}) => {
 export const getServerSideProps = async () => {
     const query = '*[category == "Female"]';
     const AllFemaleProducts = await client.fetch(query);
-
+    // console.log(AllFemaleProducts)
     return {
       props: { AllFemaleProducts }
     }

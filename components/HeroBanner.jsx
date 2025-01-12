@@ -10,6 +10,7 @@ import Link from 'next/link';
 
 const HeroBanner = () => {
   return (
+    <>
     <header className='header'>
         <div className='header-left-side'>
             <div className='header-content'>
@@ -25,10 +26,22 @@ const HeroBanner = () => {
           
         </div>
 
+
         <div className='header-right-side'>
                 <Image style={{"borderRadius" : "5%"}} className='header-img' src={headerImg} width={650} height={650} alt='header image' />
         </div>
     </header>
+    <div className="why-dk-bookfold">
+      <h1>Why Choose DK Bookfold?</h1>
+      <h2>DK Bookfold offers unique folded books that make memorable gifts and statement decor pieces:</h2>
+      <ul>
+        <li><b>• Personalized Gifts:</b> Thoughtful presents for loved ones, teachers, and colleagues.</li>
+        <li><b>• Home Decor:</b> A conversation-starting addition to any space.</li>
+        <li><b>• Creative Art:</b> Celebrate the beauty of craftsmanship with every piece.</li>
+      </ul>
+    </div>
+
+    </>
   )
 }
 

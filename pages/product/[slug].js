@@ -2,37 +2,16 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { CgShoppingCart } from 'react-icons/cg';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import products from "../../data/dummy.json"
 
 
 import { useRouter } from 'next/router';
 
 
-// Sample JSON data
-const products = [
-  {
-    category: "Portrait",
-    details: [
-      "Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
-      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
-    ],
-    dimensions: "23*15",
-    care: [
-      "Use clean, dry hands and avoid overhandling.",
-      "Keep away from sunlight, moisture, and high-traffic areas.",
-      "Dust gently with a soft brush; avoid wet cleaning.",
-      "Store upright in a dry, dust-free space."
-    ],
-    img: "homepage-1.webp",
-    name: "Customized Portrait",
-    priceoriginal: "9999",
-    pricediscounted: "7999"
-  }
-  // Add more products here as needed
-];
 
 const ProductPage = () => {
   const { query } = useRouter();
-  const { slug } = query; // Get the 'slug' from the URL
+  const { slug } = query; // o the 'slug' from the URL
 
   // Find the product based on the slug
   const product = products.find(p => p.name.toLowerCase().replace(/\s+/g, '-').toLowerCase() === slug);

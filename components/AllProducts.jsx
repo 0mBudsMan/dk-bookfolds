@@ -6,7 +6,7 @@ const Allproducts = ({product}) => {
   console.log(product)
   return (
         <div>
-          <Link href={`/product/`}>
+          <Link href={`/product/${product.name.toLowerCase().replace(/\s+/g, '-').toLowerCase()}`}>
             <div className='Allproduct-card'>
               <img src={product.img} width={250} height={270} />
               <p className='Allproduct-name'>{product.name}</p>

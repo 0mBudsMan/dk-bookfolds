@@ -53,29 +53,50 @@ const Navbar = ({Searchproducts}) => {
       </button> 
       }
 
-      <div className='navbar-smallscreen'>
-        <RiMenu3Line color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
-        {toggleMenu && (
-          <div className='navbar-smallscreen_overlay'>
-            <Link href='/'>
-              <Image className='logo-small' src={logo} width={140} height={25} alt='logo' />
-            </Link>
-            <RiCloseLine  color='black' fontSize={27} className='close_icon' onClick={() => setToggleMenu(false)} />
-            <ul className='navbar-smallscreen_links'>
-              <Link href='/cart'>
-                  <button className='cart-small-screen' onClick={() => setShowCart(false)}>   
-                    <CgShoppingCart size={22} />
-                    <span className='cart-item-qty'>{totalQty}</span> 
-                  </button>
-              </Link> 
-              <Link href='/female'><li>Female</li></Link>
-              <Link href='/male'><li>Male</li></Link>
-              <Link href='/kids'><li>Kids</li></Link>
-              <Link href='/products'><li>All Products</li></Link>
-            </ul>
-          </div>
-        )}
-      </div>
+<div className='navbar-smallscreen'>
+ 
+  <RiMenu3Line color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
+  
+ =
+  {toggleMenu && (
+    <div className='navbar-smallscreen_overlay'>
+      <Link href='/'>
+        <Image className='logo-small' src={logo} width={140} height={25} alt='logo' />
+      </Link>
+      
+      
+      <RiCloseLine color='black' fontSize={27} className='close_icon' onClick={() => setToggleMenu(false)} />
+      
+      
+      <ul className='navbar-smallscreen_links'>
+        <Link href='/'>
+          <button 
+            className='cart-small-screen' 
+            onClick={() => { setShowCart(false); setToggleMenu(false); }}
+          >
+            <CgShoppingCart size={22} />
+            <span className='cart-item-qty'>{totalQty}</span>
+          </button>
+        </Link>
+
+        
+        <Link href='/words'>
+          <li onClick={() => setToggleMenu(false)}>Words</li>
+        </Link>
+        <Link href='/portrait'>
+          <li onClick={() => setToggleMenu(false)}>Portrait</li>
+        </Link>
+        <Link href='/shapes-symbols'>
+          <li onClick={() => setToggleMenu(false)}>Shapes and Symbols</li>
+        </Link>
+        <Link href='/date'>
+          <li onClick={() => setToggleMenu(false)}>Others</li>
+        </Link>
+      </ul>
+    </div>
+  )}
+</div>
+
     </nav>
   )
 }

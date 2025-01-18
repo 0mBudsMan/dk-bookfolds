@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from '../src/assets/logoo.png'
+import logo from '../src/assets/logo.png'
 import { GrLinkedinOption} from 'react-icons/gr'
 import { FaXTwitter } from "react-icons/fa6"
 import { FaInstagram } from "react-icons/fa";

@@ -1,18 +1,614 @@
 [
-    {
-        "category": "Portrait",
-        "details": ["Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
-        "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."],
-        "dimensions": "23*15",
-        "care": [
-            "Use clean, dry hands and avoid overhandling.",
-            "Keep away from sunlight, moisture, and high-traffic areas.",
-            "Dust gently with a soft brush; avoid wet cleaning.",
-            "Store upright in a dry, dust-free space."
-        ],
-        "img": "homepage-1.webp",
-        "name": "Customized Portrait",
-        "priceoriginal":"9999",
-        "pricediscounted": "7999"
-    }
+  {
+    "category": "Portrait",
+    "details": [
+      "Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
+      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Customized_Portrait.jpeg",
+    "name": "Customized Portrait",
+    "priceoriginal": "9999",
+    "pricediscounted": "7999"
+  },
+  {
+    "category": "Logo",
+    "details": [
+      "Craftsmanship: With over 100 hours of meticulous hand-folding, each logo is a labor of precision, ensuring every detail of your brand is beautifully captured.",
+      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Customized_Portrait.jpeg",
+    "name": "Customized Logo",
+    "priceoriginal": "11999",
+    "pricediscounted": "8999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "mom.avif",
+    "name": "Mom",
+    "priceoriginal": "2499",
+    "pricediscounted": "1499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "dad.jpg",
+    "name": "Dad",
+    "priceoriginal": "2499",
+    "pricediscounted": "1499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Joy.jpeg",
+    "name": "Joy",
+    "priceoriginal": "2499",
+    "pricediscounted": "1499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "read.webp",
+    "name": "Read",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "love.jpg",
+    "name": "Love",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Hope.jpg",
+    "name": "Hope",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Home.jpg",
+    "name": "Home",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Idea.jpeg",
+    "name": "Idea",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Vini.webp",
+    "name": "Vini",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Vici.webp",
+    "name": "Vici",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Vidi.webp",
+    "name": "Vidi",
+    "priceoriginal": "2999",
+    "pricediscounted": "1999"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Dream.webp",
+    "name": "Dream",
+    "priceoriginal": "3499",
+    "pricediscounted": "2250"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Faith.webp",
+    "name": "Faith",
+    "priceoriginal": "3499",
+    "pricediscounted": "2250"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "teach.jpeg",
+    "name": "Teach",
+    "priceoriginal": "3499",
+    "pricediscounted": "2250"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Peace.webp",
+    "name": "Peace",
+    "priceoriginal": "3499",
+    "pricediscounted": "2250"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Family.webp",
+    "name": "Family",
+    "priceoriginal": "3999",
+    "pricediscounted": "2499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "sister.avif",
+    "name": "Sister",
+    "priceoriginal": "3999",
+    "pricediscounted": "2499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Coffee.avif",
+    "name": "Coffee",
+    "priceoriginal": "3999",
+    "pricediscounted": "2499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Desire.webp",
+    "name": "Desire",
+    "priceoriginal": "3999",
+    "pricediscounted": "2499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Doctor.webp",
+    "name": "Doctor",
+    "priceoriginal": "3999",
+    "pricediscounted": "2499"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Believe.webp",
+    "name": "Believe",
+    "priceoriginal": "4999",
+    "pricediscounted": "2750"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Friends.webp",
+    "name": "Friends",
+    "priceoriginal": "4999",
+    "pricediscounted": "2750"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Inspire.avif",
+    "name": "Inspire",
+    "priceoriginal": "4999",
+    "pricediscounted": "2750"
+  },
+  {
+    "category": "Words",
+    "details": [
+      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Imagine.webp",
+    "name": "Imagine",
+    "priceoriginal": "4999",
+    "pricediscounted": "2750"
+  },
+  {
+    "category": "Slogans",
+    "details": [
+      "Craftsmanship: Over 70 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Good Vibes Only.jpeg",
+    "name": "Good Vibes Only",
+    "priceoriginal": "8999",
+    "pricediscounted": "6999"
+  },
+  {
+    "category": "Slogans",
+    "details": [
+      "Craftsmanship:Over 70 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": ["Veni.webp", "Vici.webp", "Vidi.webp"],
+    "name": "Veni Vidi Vici",
+    "priceoriginal": "7999",
+    "pricediscounted": "5799"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Om.jpg",
+    "name": "Om",
+    "priceoriginal": "2999",
+    "pricediscounted": "1750"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Heart.jpg",
+    "name": "Heart",
+    "priceoriginal": "1499",
+    "pricediscounted": "999"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "MiniHeart.webp",
+    "name": "Miniature Heart",
+    "priceoriginal": "1299",
+    "pricediscounted": "799"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Vase.avif",
+    "name": "Vase",
+    "priceoriginal": "1799",
+    "pricediscounted": "999"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Baby Feet.webp",
+    "name": "Baby Feet",
+    "priceoriginal": "4999",
+    "pricediscounted": "2999"
+  },
+  {
+    "category": "shapes-symbols",
+    "details": [
+      "Craftsmanship:Over 10 hours of meticulous hand-folding goes into creating this one-of-a-kind design, ensuring exceptional quality and precision.",
+      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Moustache.jpg",
+    "name": "Moustache",
+    "priceoriginal": "1899",
+    "pricediscounted": "999"
+  }
 ]

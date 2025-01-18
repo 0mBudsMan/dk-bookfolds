@@ -13,7 +13,7 @@ const Page = () => {
       {filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
            
-          <AllProducts product={product}/>
+          <AllProducts key={product.name} product={product}/>
         ))
       ) : (
         <p>No products found in this category.</p>

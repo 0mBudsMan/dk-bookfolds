@@ -14,7 +14,7 @@ const HeroBanner = () => {
     <header className='header'>
         <div className='header-left-side'>
             <div className='header-content'>
-                <span>Dhruv Karena's </span>
+                <span>Dhruv Karena&apos;s </span>
                 <h1>Folded Wonders</h1>
                 <h2>Where Books Become Timeless Art</h2>
                 {/* <p>Unique Book Art Creations</p> */}

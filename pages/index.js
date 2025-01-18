@@ -80,8 +80,8 @@ const Home = () => {
         >
           <div className='products-container'>
             {products?.map(product => (
-              <SwiperSlide>
-                <Product key={product._id} product={product} />
+              <SwiperSlide key={product.name}>
+                <Product key={product.name} product={product} />
               </SwiperSlide>
             ))}
           </div>

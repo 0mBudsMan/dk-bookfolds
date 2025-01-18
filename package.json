@@ -18,7 +18,7 @@
     "@stripe/stripe-js": "^1.46.0",
     "canvas-confetti": "^1.6.0",
     "eslint": "8.30.0",
-    "eslint-config-next": "13.1.0",
+    "eslint-config-next": "^13.1.0",
     "next": "13.1.0",
     "next-sanity-image": "^5.0.0",
     "react": "18.2.0",

@@ -11,7 +11,7 @@ const Allproducts = ({product}) => {
               <img src={product.img} width={250} height={270} />
               <p className='Allproduct-name'>{product.name}</p>
               {/* <p className='Allproduct-tags'>{product.}</p> */}
-              <p className='Allproduct-price'>${product.priceoriginal}</p>
+              <p className='Allproduct-price'>${product.pricediscounted}</p>
             </div>
           </Link>
         </div>

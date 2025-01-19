@@ -41,7 +41,7 @@ const ClassyProductDetails = ({ product }) => {
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd } = useStateContext();
 
-  const imagePath = `/assets/${img}`;
+  const imagePath = `/${img}`;
   const whatsappNumber = '918320863774';
   const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in the product: ${encodeURIComponent(name)}`;
 

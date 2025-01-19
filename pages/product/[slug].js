@@ -145,8 +145,8 @@ const ClassyProductDetails = ({ product }) => {
               <CgShoppingCart size={20} /> Add to Cart
             </button>
             <div style={{ marginTop: '15px', textAlign: 'right' }}>
-              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>${priceoriginal}</span>
-              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>${pricediscounted}</span>
+              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{priceoriginal}</span>
+              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹{pricediscounted}</span>
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>

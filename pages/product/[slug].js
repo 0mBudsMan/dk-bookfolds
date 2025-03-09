@@ -43,7 +43,7 @@ const ClassyProductDetails = ({ product }) => {
 
   const imagePath = `/${img}`;
   const whatsappNumber = '918320863774';
-  const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in the product: ${encodeURIComponent(name)}`;
+  const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in the product: ${encodeURIComponent(name)}. Link of the product is: https://dk-bookfolds.vercel.app/product/${name.toLowerCase().replace(/\s+/g, '-')}`;
 
   const emailAddress = 'dkbookfold@gmail.com';
   const emailSubject = encodeURIComponent(`Inquiry about ${name}`);

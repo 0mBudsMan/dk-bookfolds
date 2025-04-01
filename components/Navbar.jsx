@@ -22,7 +22,8 @@ const Navbar = ({Searchproducts}) => {
       <Link href='/portrait'><li>Portrait</li></Link>
       {/* <Link href='/slogan'><li>Slogan</li></Link> */}
       <Link href='/shapes-symbols'><li>Shapes and Symbols</li></Link>
-      <Link href='/date'><li>Others</li></Link>
+      <Link href='/logo'><li>Logo</li></Link>
+      <Link href='/customised'><li>Customised</li></Link>
 
       {/* <Link href='/logo'><li>Logo</li></Link> */}
       {/* <Link href='/number'><li>Number</li></Link> */}
@@ -39,19 +40,7 @@ const Navbar = ({Searchproducts}) => {
               setSearchTerm(event.target.value);
           }} */}
 
-      {showCart ?
-      <Link href='/cart'>
-        <button className='cart' onClick={() => setShowCart(false)}>   
-          <CgShoppingCart size={22} />
-          <span className='cart-item-qty'>{totalQty}</span> 
-        </button>
-      </Link> 
-      : 
-      <button className='cart' onClick={() => setShowCart(true)}> 
-        <CgShoppingCart size={22} />
-        <span className='cart-item-qty'>{totalQty}</span>
-      </button> 
-      }
+      
 
 <div className='navbar-smallscreen'>
  
@@ -69,15 +58,7 @@ const Navbar = ({Searchproducts}) => {
       
       
       <ul className='navbar-smallscreen_links'>
-        <Link href='/'>
-          <button 
-            className='cart-small-screen' 
-            onClick={() => { setShowCart(false); setToggleMenu(false); }}
-          >
-            <CgShoppingCart size={22} />
-            <span className='cart-item-qty'>{totalQty}</span>
-          </button>
-        </Link>
+       
 
         
         <Link href='/words'>
@@ -89,8 +70,11 @@ const Navbar = ({Searchproducts}) => {
         <Link href='/shapes-symbols'>
           <li onClick={() => setToggleMenu(false)}>Shapes and Symbols</li>
         </Link>
-        <Link href='/date'>
-          <li onClick={() => setToggleMenu(false)}>Others</li>
+        <Link href='/logo'>
+          <li onClick={() => setToggleMenu(false)}>Logo</li>
+        </Link>
+        <Link href='/customised'>
+          <li onClick={() => setToggleMenu(false)}>Customised</li>
         </Link>
       </ul>
     </div>

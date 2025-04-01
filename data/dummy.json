@@ -30,7 +30,7 @@
       "Dust gently with a soft brush; avoid wet cleaning.",
       "Store upright in a dry, dust-free space."
     ],
-    "img": "Customized_Portrait.jpeg",
+    "img": "starb.jpg",
     "name": "Customized Logo",
     "priceoriginal": "11999",
     "pricediscounted": "8999"
@@ -179,24 +179,7 @@
     "priceoriginal": "2999",
     "pricediscounted": "1999"
   },
-  {
-    "category": "Words",
-    "details": [
-      "Craftsmanship: Every design involves over 10 hours of intricate hand-folding, showcasing exceptional precision and artistry.",
-      "Materials: High-quality, pre-loved books are repurposed into stunning decor pieces, ensuring sustainability without compromising on style."
-    ],
-    "dimensions": "23*15",
-    "care": [
-      "Use clean, dry hands and avoid overhandling.",
-      "Keep away from sunlight and moisture.",
-      "Dust gently with a soft brush; avoid wet cleaning.",
-      "Store upright in a dry, dust-free space."
-    ],
-    "img": "Vini.webp",
-    "name": "Vini",
-    "priceoriginal": "2999",
-    "pricediscounted": "1999"
-  },
+  
   {
     "category": "Words",
     "details": [

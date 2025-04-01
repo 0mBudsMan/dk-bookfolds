@@ -23,7 +23,7 @@ const Navbar = ({Searchproducts}) => {
       {/* <Link href='/slogan'><li>Slogan</li></Link> */}
       <Link href='/shapes-symbols'><li>Shapes and Symbols</li></Link>
       <Link href='/logo'><li>Logo</li></Link>
-      <Link href='/date'><li>Customised</li></Link>
+      <Link href='/customised'><li>Customised</li></Link>
 
       {/* <Link href='/logo'><li>Logo</li></Link> */}
       {/* <Link href='/number'><li>Number</li></Link> */}

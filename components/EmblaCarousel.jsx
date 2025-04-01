@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { CgShoppingCart } from 'react-icons/cg';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-const OPTIONS = { slidesToScroll: 'auto' }
+const OPTIONS = { loop: true, slidesToScroll: 'auto' }
 
 const ClassyProductDetails = ({ product }) => {
 
@@ -49,7 +49,7 @@ const ClassyProductDetails = ({ product }) => {
       color: '#fff',
     }
   };
-
+  const [dimension, setDimension] = useState(23)
   return (
     <div style={{ 
     //   fontFamily: '"Playfair Display", serif',
@@ -69,7 +69,7 @@ const ClassyProductDetails = ({ product }) => {
           }} />
         </div> */}
         <EmblaCarousel options={OPTIONS} slides={imagePaths} ></EmblaCarousel>
-        <div style={{ flex: '1 1 500px' }}>
+        <div style={{ flex: '1 1 500px', marginLeft: "35px" }}>
           <h1 style={{ 
             fontSize: '2.5em', 
             marginBottom: '20px',
@@ -89,13 +89,45 @@ const ClassyProductDetails = ({ product }) => {
   }}>
     Dimensions
   </h3>
-  <p style={{ 
-    fontSize: '1.1em', 
-    fontFamily: '"Courier New", monospace', 
-    letterSpacing: '0.5px' 
+  <div style={{
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '70px',
   }}>
-    23 cm and 30 cm
-  </p>
+    <button
+  style={{
+    fontSize: "1.2em",
+    backgroundColor: dimension === 23 ? "#000000" : "#F5F5F5", 
+    color: dimension === 23 ? "#FFFFFF" : "#000000", 
+    padding: "10px",
+    border: "1px solid #ccc",
+    borderRadius: "5px",
+    cursor: "pointer",
+    transition: "0.3s ease-in-out",
+  }}
+  onClick={() => setDimension(23)}
+>
+  23 cm
+</button>
+
+<button
+  style={{
+    fontSize: "1.2em",
+    backgroundColor: dimension === 30 ? "#000000" : "#F5F5F5",
+    color: dimension === 30 ? "#FFFFFF" : "#000000",
+    padding: "10px",
+    border: "1px solid #ccc",
+    borderRadius: "5px",
+    cursor: "pointer",
+    transition: "0.3s ease-in-out",
+  }}
+  onClick={() => setDimension(30)}
+>
+  30 cm
+</button>
+
+  </div>
+  
 </div>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px' }}>
             <h3 style={{ marginRight: '20px', fontSize: '1.2em' }}>Quantity: </h3>
@@ -124,15 +156,11 @@ const ClassyProductDetails = ({ product }) => {
               <CgShoppingCart size={20} /> Add to Cart
             </button>
             <div style={{ marginTop: '15px', textAlign: 'right' }}>
-            <span style={{  marginRight: '15px' }}>23 cm -</span>
-              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{priceoriginal}</span>
-              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹{pricediscounted}</span>
+            <span style={{  marginRight: '15px' }}>{dimension} cm</span>
+              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{(dimension==23)?9999:13999}</span>
+              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹{(dimension==23)?7999:11999}</span>
             </div>
-            <div style={{ marginTop: '15px', textAlign: 'right' }}>
-            <span style={{  marginRight: '15px' }}>30 cm -</span>
-              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{13999}</span>
-              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹11,999</span>
-            </div>
+            
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <button 
@@ -214,7 +242,9 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           
           {slides.map((slide, index) => (
-        <div className="embla__slide" key={index}>
+        <div className="embla__slide" key={index} style={{
+          width: "200px"
+        }}>
           <div style={{ flex: '1 1 500px', marginRight: '40px' }}>
           <img src={slide} alt={"cust_port"} style={{ 
             width: '100%', 

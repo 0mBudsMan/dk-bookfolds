@@ -1,11 +1,17 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router'
 import products from "../data/dummy.json"
 import { AllProducts } from "../components";
 import EmblaCarousel from "../components/EmblaCarousel";
+import { useEffect, useState } from "react";
 // import { useRouter } from 'next/router';
 const Page = () => {
-  const { query } = useRouter();
-  const { slug } = query;
+  const router = useRouter();
+  const { slug } = router.query;
+  useEffect(() => {
+    if (slug === "logo") {
+      router.push("/product/customized-logo");
+    }
+  }, [slug, router]);
   console.log(slug)
   if(slug=="portrait"){
     const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
@@ -16,10 +22,8 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
       <EmblaCarousel product={filteredProducts[0]} />
     )
   }
-  if(slug=="logo"){
-    const router = useRouter();
-    router.push('product/customized-logo');
-  }
+  
+  
   const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
   console.log(filteredProducts)
   return (

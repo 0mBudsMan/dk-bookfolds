@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { CgShoppingCart } from 'react-icons/cg';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-const OPTIONS = { loop: true, slidesToScroll: 'auto' }
+const OPTIONS = { loop: true, slidesToScroll: 1 }
 
 const ClassyProductDetails = ({ product }) => {
 

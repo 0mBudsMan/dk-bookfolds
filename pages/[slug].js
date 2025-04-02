@@ -16,15 +16,21 @@ const Page = () => {
     }
   }, [slug, router]);
 
-  console.log(slug);
 
-  if (slug === "portrait") {
-    const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
-    return <EmblaCarousel product={filteredProducts[0]} />;
+  let filteredProducts = [];
+  if (slug === "customised") {
+    filteredProducts = products.filter((p) => p.category.toLowerCase() === subcategory);
+  } else {
+    filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
   }
 
+  if (slug === "portrait" ) {
+    
+    return <EmblaCarousel product={filteredProducts[0]} />;
+  }
+  
   if (slug === "customised") {
-    const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
+    
 
     return (
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px' }}>
@@ -46,14 +52,14 @@ const Page = () => {
           <button
             style={{
               padding: '10px 16px',
-              backgroundColor: subcategory === 'initial' ? '#000000' : '#F5F5F5',
-              color: subcategory === 'initial' ? '#FFFFFF' : '#000000',
+              backgroundColor: subcategory === 'initials' ? '#000000' : '#F5F5F5',
+              color: subcategory === 'initials' ? '#FFFFFF' : '#000000',
               borderRadius: '8px',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
               cursor: 'pointer',
               transition: 'background-color 0.3s, color 0.3s',
             }}
-            onClick={() => setSubcategory("initial")}
+            onClick={() => setSubcategory("initials")}
           >
             Initial
           </button>
@@ -72,21 +78,13 @@ const Page = () => {
             Date
           </button>
         </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product) => (
-              <AllProducts key={product.name} product={product} />
-            ))
-          ) : (
-            <p style={{ textAlign: 'center', color: '#6B7280', gridColumn: 'span 4' }}>No products found in this category.</p>
-          )}
-        </div>
+        <EmblaCarousel product={filteredProducts[0]} />
+        
       </div>
     );
   }
 
-  const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
+  
 
   return (
     <div className="Allproducts-container">

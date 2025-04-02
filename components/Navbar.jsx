@@ -50,7 +50,7 @@ const Navbar = ({Searchproducts}) => {
   {toggleMenu && (
     <div className='navbar-smallscreen_overlay'>
       <Link href='/'>
-        <Image className='logo-small' src={logo} width={140} height={25} alt='logo' />
+        <Image className='logo-small' src={logo} height={75} alt='logo' />
       </Link>
       
       

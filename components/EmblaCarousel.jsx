@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { CgShoppingCart } from 'react-icons/cg';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { useEffect } from 'react';
 const OPTIONS = { loop: true, slidesToScroll: 1 }
 
 const ClassyProductDetails = ({ product }) => {
@@ -232,7 +233,12 @@ const EmblaCarousel = (props) => {
   const { slides, options } = props
   console.log(slides)
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
-
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200)
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
 
@@ -249,15 +255,17 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           
           {slides.map((slide, index) => (
-        <div className="embla__slide" key={index} style={{
-          width: "210px"
+        <div className="embla__slide" key={index} style={{ 
+          width: windowWidth <= 768 ? '100%' : '210px',
+          minWidth: windowWidth <= 768 ? '100%' : '210px'
         }}>
           <div style={{ flex: '1 1 500px' }}>
           <img src={slide} alt={"cust_port"} style={{ 
             width: '100%', 
             height: 'auto', 
             border: '1px solid #000',
-            padding: '10px',
+            marginLeft: windowWidth <= 768 ? '0' : '100px',
+                    marginRight: windowWidth <= 768 ? '0' : '100px',
           }} />
         </div>
         </div>

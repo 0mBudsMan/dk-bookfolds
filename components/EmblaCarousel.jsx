@@ -142,7 +142,7 @@ const ClassyProductDetails = ({ product }) => {
             </div>
           </div>
           <div style={{ marginBottom: '30px' }}>
-            <button 
+            {/* <button 
               onClick={() => onAdd(product, qty)} 
               style={{ 
                 ...hoverButtonStyle, 
@@ -154,7 +154,7 @@ const ClassyProductDetails = ({ product }) => {
               }}
             >
               <CgShoppingCart size={20} /> Add to Cart
-            </button>
+            </button> */}
             <div style={{ marginTop: '15px', textAlign: 'right' }}>
             <span style={{  marginRight: '15px' }}>{dimension} cm</span>
               <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{(dimension==23)?9999:13999}</span>

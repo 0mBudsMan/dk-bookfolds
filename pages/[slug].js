@@ -3,7 +3,9 @@ import products from "../data/dummy.json"
 import { AllProducts } from "../components";
 import EmblaCarousel from "../components/EmblaCarousel";
 import { useEffect, useState } from "react";
-
+import ShippingPolicy from '../components/ShippingPolicy';
+import About from '../components/About';
+import RefundPolicy from '../components/RefundPolicy';
 const Page = () => {
   const router = useRouter();
   const { slug } = router.query;
@@ -17,6 +19,18 @@ const Page = () => {
   }, [slug, router]);
 
   console.log(slug);
+
+  if(slug==="shipping-policy"){
+    return <ShippingPolicy />
+  }
+
+  if(slug==="about"){
+    return <About/>
+  }
+
+  if(slug==="refund"){
+    return  <RefundPolicy />
+  }
 
   if (slug === "portrait") {
     const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);

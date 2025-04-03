@@ -43,12 +43,7 @@ const About = () => {
         transforming books into mesmerizing pieces of art.
       </p>
 
-      <div className='products-outer-container'>
-        <div className='subtitle'>
-          <span>PRODUCTS</span>
-          <h2>Check What We Have</h2>
-        </div>
-        
+      <div className='products-outer-container'> 
         <Swiper
           breakpoints={{
             300: { slidesPerView: 1 },

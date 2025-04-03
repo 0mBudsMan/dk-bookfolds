@@ -11,15 +11,19 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { CgShoppingCart } from 'react-icons/cg';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-const OPTIONS = { loop: true, slidesToScroll: 'auto' }
+import { useEffect } from 'react';
+const OPTIONS = { loop: true, slidesToScroll: 1 }
 
 const ClassyProductDetails = ({ product }) => {
 
-  const { name, details, care, priceoriginal, pricediscounted, img, dimensions } = product;
+  const { name, details, care, priceoriginal, pricediscounted, img, dimensions, category } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd } = useStateContext();
 
   const imagePaths = ["por1.jpg", "por2.jpg", "por3.jpg"]
+  const imagePathsName = ["name/1.jpg", "name/2.jpg", "name/3.jpg", "name/4.jpg", "name/5.jpg", "name/6.jpg", "name/7.jpg" , "name/8.jpg"]
+  const imagePathInitals = ["initials/1.jpg", "initials/2.jpg", "initials/3.jpg", "initials/4.jpg"]
+  const imagePathDate = ["date/1.jpg", "date/2.jpg", "date/3.jpg", "date/4.jpg", "date/5.jpg", "date/6.jpg", "date/7.jpg",]
   const whatsappNumber = '918320863774';
   const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in the product: ${encodeURIComponent(name)}. Link of the product is: https://dk-bookfolds.vercel.app/product/${name.toLowerCase().replace(/\s+/g, '-')}`;
 
@@ -58,8 +62,9 @@ const ClassyProductDetails = ({ product }) => {
       padding: '40px 20px',
       color: '#000',
       backgroundColor: '#fff',
+      
     }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' , gap: `20px`}}>
         {/* <div style={{ flex: '1 1 500px', marginRight: '40px' }}>
           <img src={imagePath} alt={name} style={{ 
             width: '100%', 
@@ -68,14 +73,18 @@ const ClassyProductDetails = ({ product }) => {
             padding: '10px',
           }} />
         </div> */}
-        <EmblaCarousel options={OPTIONS} slides={imagePaths} ></EmblaCarousel>
-        <div style={{ flex: '1 1 500px', marginLeft: "35px" }}>
+        <EmblaCarousel 
+  options={OPTIONS} 
+  slides={category === "Portrait" ? imagePaths : category === "Name" ? imagePathsName : category==="Initials" ? imagePathInitals : imagePathDate} 
+/>
+
+        <div style={{ flex: '1 1 500px', justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
           <h1 style={{ 
             fontSize: '2.5em', 
             marginBottom: '20px',
             borderBottom: '2px solid #000',
             paddingBottom: '10px',
-          }}>{name}</h1>
+          }}>Customised {category}</h1>
           <div style={{ marginBottom: '30px', 
   border: '1px solid #000', 
   padding: '20px', 
@@ -223,9 +232,15 @@ const useStateContext = () => {
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
-  console.log(slides)
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
+  console.log(props)
+  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200)
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
 
@@ -242,15 +257,18 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           
           {slides.map((slide, index) => (
-        <div className="embla__slide" key={index} style={{
-          width: "200px"
+        <div className="embla__slide" key={index} style={{ 
+          width: windowWidth <= 768 ? '100%' : '210px',
+          minWidth: windowWidth <= 768 ? '100%' : '210px'
         }}>
-          <div style={{ flex: '1 1 500px', marginRight: '40px' }}>
+          <div style={{ flex: '1 1 500px' }}>
           <img src={slide} alt={"cust_port"} style={{ 
             width: '100%', 
             height: 'auto', 
-            border: '1px solid #000',
-            padding: '10px',
+            maxHeight : "350px",
+             border: '1px solid #000',
+            marginLeft: windowWidth <= 768 ? '0' : '100px',
+                    marginRight: windowWidth <= 768 ? '0' : '100px',
           }} />
         </div>
         </div>

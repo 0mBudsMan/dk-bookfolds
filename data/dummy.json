@@ -18,6 +18,62 @@
     "pricediscounted": "7999"
   },
   {
+    "category": "Name",
+    "details": [
+      "Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
+      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Customized_Portrait.jpeg",
+    "name": "Customized Portrait",
+    "priceoriginal": "9999",
+    "pricediscounted": "7999"
+  },
+  {
+    "category": "Initials",
+    "details": [
+      "Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
+      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Customized_Portrait.jpeg",
+    "name": "Customized Portrait",
+    "priceoriginal": "9999",
+    "pricediscounted": "7999"
+  },
+  {
+
+    "category": "Date",
+    "details": [
+      "Craftsmanship: With over 100 hours of intricate hand-folding, each portrait is a true labor of love, reflecting unparalleled attention to detail and skill.",
+      "Materials: Crafted from repurposed, high-quality books, our portraits combine sustainability with elegance."
+    ],
+    "dimensions": "23*15",
+    "care": [
+      "Use clean, dry hands and avoid overhandling.",
+      "Keep away from sunlight and moisture.",
+      "Dust gently with a soft brush; avoid wet cleaning.",
+      "Store upright in a dry, dust-free space."
+    ],
+    "img": "Customized_Portrait.jpeg",
+    "name": "Customized Portrait",
+    "priceoriginal": "9999",
+    "pricediscounted": "7999"
+  
+  },
+  {
     "category": "Logo",
     "details": [
       "Craftsmanship: With over 100 hours of meticulous hand-folding, each logo is a labor of precision, ensuring every detail of your brand is beautifully captured.",

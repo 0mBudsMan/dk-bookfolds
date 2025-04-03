@@ -3,13 +3,13 @@ import Image from 'next/image'
 import { GrLinkedinOption } from 'react-icons/gr'
 import { FaXTwitter } from "react-icons/fa6"
 import { FaInstagram } from "react-icons/fa";
-
+import logo from '../src/assets/logoo.png'
 const Footer = () => {
   return (
     <footer>
       <div className='footer'>
         <div className='logo'>
-          <Image src="/assets/logo.png" width={120} height={100} alt="logo" />
+          <Image src={logo} width={120} height={100} alt="logo" />
           <p>An artisan collection of beautifully crafted, high-quality book art pieces, each made with care and precision.</p>
           <div className='icon-container'>
             <div><a href="https://x.com/KarenaDhruv?t=BMsIeo_QFPtGMF6YhxiDPg&s=08"><FaXTwitter size={20} /></a></div>

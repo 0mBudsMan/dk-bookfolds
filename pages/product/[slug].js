@@ -98,26 +98,26 @@ const ClassyProductDetails = ({ product }) => {
             paddingBottom: '10px',
           }}>{name}</h1>
           <div style={{ marginBottom: '30px', 
-  border: '1px solid #000', 
-  padding: '20px', 
-  display: 'inline-block'
-}}>
-  <h3 style={{ 
-    marginBottom: '15px', 
-    fontSize: '1.2em', 
-    borderBottom: '1px solid #000', 
-    paddingBottom: '10px' 
-  }}>
-    Dimensions
-  </h3>
-  <p style={{ 
-    fontSize: '1.1em', 
-    fontFamily: '"Courier New", monospace', 
-    letterSpacing: '0.5px' 
-  }}>
-    {dimensions}
-  </p>
-</div>
+            border: '1px solid #000', 
+            padding: '20px', 
+            display: 'inline-block'
+          }}>
+            <h3 style={{ 
+              marginBottom: '15px', 
+              fontSize: '1.2em', 
+              borderBottom: '1px solid #000', 
+              paddingBottom: '10px' 
+            }}>
+              Dimensions
+            </h3>
+            <p style={{ 
+              fontSize: '1.1em', 
+              fontFamily: '"Courier New", monospace', 
+              letterSpacing: '0.5px' 
+            }}>
+              {dimensions}
+            </p>
+          </div>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px' }}>
             <h3 style={{ marginRight: '20px', fontSize: '1.2em' }}>Quantity: </h3>
             <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #000' }}>
@@ -130,7 +130,7 @@ const ClassyProductDetails = ({ product }) => {
               </button>
             </div>
           </div>
-          <div style={{ marginBottom: '30px' }}>
+          {/* <div style={{ marginBottom: '30px' }}>
             <button 
               onClick={() => onAdd(product, qty)} 
               style={{ 
@@ -148,7 +148,7 @@ const ClassyProductDetails = ({ product }) => {
               <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{priceoriginal}</span>
               <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹{pricediscounted}</span>
             </div>
-          </div>
+          </div> */}
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <button 
               onClick={() => window.open(whatsappMessage, '_blank')}

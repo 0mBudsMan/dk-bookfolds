@@ -9,27 +9,28 @@ import featured4 from '../src/assets/Featured4.png';
 import Link from 'next/link';
 
 const HeroBanner = () => {
+
+  
   return (
     <>
-    <header className='header'>
+    <header className='header' style={{"display" : "flex" , "alignItems" : "center"}}>
+    <div className='header-right-side'>
+                <Image style={{"borderRadius" : "5%"}} className='header-img' src={headerImg} width={650} height={650} alt='header image' />
+        </div>
         <div className='header-left-side'>
             <div className='header-content'>
                 <span>Dhruv Karena&apos;s </span>
                 <h1>Folded Wonders</h1>
+                <h2>India's First Bookfolding Webstore</h2>
                 <h2>Where Books Become Timeless Art</h2>
                 {/* <p>Unique Book Art Creations</p> */}
-                <Link href='/products'>
+                <Link href='/products/words'>
                      <button className='btn' type='button'><CgShoppingCart size={26} />  Start Shopping</button>
                 </Link>
             </div>
 
           
-        </div>
-
-
-        <div className='header-right-side'>
-                <Image style={{"borderRadius" : "5%"}} className='header-img' src={headerImg} width={650} height={650} alt='header image' />
-        </div>
+        </div> 
     </header>
     <div className="why-dk-bookfold">
       <h1>Why Choose DK Bookfold?</h1>

@@ -3,7 +3,7 @@ import {client} from '../lib/client'
 import { HeroBanner, EventsBanner, Newsletter, FeaturesBanner, Product } from '../components'
 import { Navigation, A11y, Lazy } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,36 +14,24 @@ const Home = () => {
     "name" : "Good Vibes Only",
     "slug" : {
       "_type": "slug",
-      "current": "gvo-bookfold"
+      "current": "words"
     },
-    "price" : "6999",
   },
   {
     "image": "/assets/homepage4.jpg",
     "name" : "Starbucks Bookfold (30CM)",
     "slug" : {
       "_type": "slug",
-      "current": "starbucks-bookfold"
+      "current": "logo"
     },
-    "price" : "1000",
-  },
-  {
-    "image": "/assets/homepage3.jpg",
-    "name" : "Good Vibes Only",
-    "slug" : {
-      "_type": "slug",
-      "current": "gvo-bookfold"
-    },
-    "price" : "1000",
   },
   {
     "image": "/assets/homepage2.jpg",
-    "name" : "Good Vibes Only",
+    "name" : "Customized Portrait",
     "slug" : {
       "_type": "slug",
-      "current": "gvo-bookfold"
+      "current": "words"
     },
-    "price" : "1000",
   }]
   return (
     <>
@@ -79,17 +67,18 @@ const Home = () => {
           navigation
         >
           <div className='products-container'>
-            {products?.map(product => (
-              <SwiperSlide key={product.name}>
-                <Product key={product.name} product={product} />
-              </SwiperSlide>
-            ))}
+          {products.map((product) => (
+            <SwiperSlide key={product.name}>
+              <Image src={product.image} alt="bookfolding" width={380} height={400} className='product-image'/>
+              <p className='product-name'>{product.name}</p>
+            </SwiperSlide>
+          ))}
+
           </div>
         </Swiper>
       </div>
 
       <FeaturesBanner />
-      <Newsletter />
     </>
   )
 }

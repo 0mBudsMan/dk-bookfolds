@@ -3,12 +3,15 @@ import products from "../data/dummy.json"
 import { AllProducts } from "../components";
 import EmblaCarousel from "../components/EmblaCarousel";
 import { useEffect, useState } from "react";
-
+import ShippingPolicy from '../components/ShippingPolicy';
+import About from '../components/About';
+import RefundPolicy from '../components/RefundPolicy';
 const Page = () => {
   const router = useRouter();
   const { slug } = router.query;
 
   const [subcategory, setSubcategory] = useState("name"); 
+
   
   useEffect(() => {
     if (slug === "logo") {
@@ -16,7 +19,17 @@ const Page = () => {
     }
   }, [slug, router]);
 
+  if(slug==="shipping-policy"){
+    return <ShippingPolicy />
+  }
 
+  if(slug==="about"){
+    return <About/>
+  }
+
+  if(slug==="refund"){
+    return  <RefundPolicy />
+  }
   let filteredProducts = [];
   if (slug === "customised") {
     filteredProducts = products.filter((p) => p.category.toLowerCase() === subcategory);
@@ -24,12 +37,14 @@ const Page = () => {
     filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
   }
 
+
   if (slug === "portrait" ) {
     
     return <EmblaCarousel product={filteredProducts[0]} />;
   }
   
   if (slug === "customised") {
+
     
 
     return (
@@ -78,6 +93,7 @@ const Page = () => {
             Date
           </button>
         </div>
+
         <EmblaCarousel product={filteredProducts[0]} />
         
       </div>

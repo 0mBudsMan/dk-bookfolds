@@ -21,7 +21,7 @@ const HeroBanner = () => {
             <div className='header-content'>
                 <span>Dhruv Karena&apos;s </span>
                 <h1>Folded Wonders</h1>
-                <h2>India's First Bookfolding Webstore</h2>
+                <h2>India&apos; First Bookfolding Webstore</h2>
                 <h2>Where Books Become Timeless Art</h2>
                 {/* <p>Unique Book Art Creations</p> */}
                 <Link href='/products/words'>

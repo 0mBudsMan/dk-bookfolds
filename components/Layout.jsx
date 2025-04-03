@@ -7,6 +7,7 @@ const Layout = ({children}) => {
     <div className='layout'>
         <Head>
             <title>DK Bookfold</title>
+            <link rel="icon" href="/favicon.ico" />
         </Head>
         <header>
             <Navbar />

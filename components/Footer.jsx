@@ -4,7 +4,9 @@ import { GrLinkedinOption } from 'react-icons/gr'
 import { FaXTwitter } from "react-icons/fa6"
 import { FaInstagram } from "react-icons/fa";
 import logo from '../src/assets/logoo.png'
+
 import Link from 'next/link';
+
 const Footer = () => {
   const whatsappNumber = '918320863774';
   const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I have a query.`;
@@ -23,13 +25,6 @@ const Footer = () => {
     <footer>
       <div className='footer'>
         <div className='logo'>
-        {/* <Image 
-            src={logo} 
-            width={120} 
-            height={100} 
-            alt="logo" 
-            style={{ display: isMobile ? 'none' : 'block' }} 
-          /> */}
           <Image src={logo} width={120} height={100} alt="logo" />
           <p>An artisan collection of beautifully crafted, high-quality book art pieces, each made with care and precision.</p>
           <div className='icon-container' style={{"marginTop" : "20px"}}>

@@ -16,6 +16,7 @@ const OPTIONS = { loop: true, slidesToScroll: 1 }
 
 const ClassyProductDetails = ({ product }) => {
 
+
   const { name, details, care, priceoriginal, pricediscounted, img, dimensions, category } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd } = useStateContext();
@@ -77,10 +78,10 @@ const ClassyProductDetails = ({ product }) => {
           }} />
         </div> */}
         <EmblaCarousel 
-  options={OPTIONS} 
-  slides={category === "Portrait" ? imagePaths : category === "Name" ? imagePathsName : category==="Initials" ? imagePathInitals : imagePathDate} 
+            options={OPTIONS} 
+            slides={category === "Portrait" ? imagePaths : category === "Name" ? imagePathsName : category==="Initials" ? imagePathInitals : imagePathDate} 
+        />
 
-/>
 
         <div style={{ flex: '1 1 500px', justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
           <h1 style={{ 
@@ -90,10 +91,10 @@ const ClassyProductDetails = ({ product }) => {
             paddingBottom: '10px',
           }}>Customised {category}</h1>
           <div style={{ marginBottom: '30px', 
-  border: '1px solid #000', 
-  padding: '20px', 
-  display: 'inline-block'
-}}>
+          border: '1px solid #000', 
+          padding: '20px', 
+          display: 'inline-block'
+        }}>
   <h3 style={{ 
     marginBottom: '15px', 
     fontSize: '1.2em', 
@@ -123,7 +124,7 @@ const ClassyProductDetails = ({ product }) => {
   23 cm
 </button>
 
-<button
+{product.category==="Portrait" && <button
   style={{
     fontSize: "1.2em",
     backgroundColor: dimension === 30 ? "#000000" : "#F5F5F5",
@@ -137,7 +138,7 @@ const ClassyProductDetails = ({ product }) => {
   onClick={() => setDimension(30)}
 >
   30 cm
-</button>
+</button>}
 
   </div>
   
@@ -170,8 +171,8 @@ const ClassyProductDetails = ({ product }) => {
             </button> */}
             <div style={{ marginTop: '15px', textAlign: 'right' }}>
             <span style={{  marginRight: '15px' }}>{dimension} cm</span>
-              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>₹{(dimension==23)?9999:13999}</span>
-              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>₹{(dimension==23)?7999:11999}</span>
+              <span style={{ textDecoration: 'line-through', marginRight: '15px' }}>{category==="Portrait" ? (dimension===23 ? "₹9999" : "₹13999") :(category=="Initials" || category=="Date")?"₹4499":null}</span>
+              <span style={{ fontSize: '1.4em', fontWeight: 'bold' }}>{category==="Portrait" ? (dimension===23 ? "₹7999" : "₹11999") : (category=="Initials" || category=="Date")?"₹3499":"Pricing Per Letter"}</span>
             </div>
             
           </div>

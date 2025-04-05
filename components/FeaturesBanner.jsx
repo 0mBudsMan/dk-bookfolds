@@ -56,7 +56,7 @@ const FeaturesBanner = () => {
           <p>
             This piece is meticulously crafted where every fold is a labor of love. Using premium-quality, we ensure each creation is a timeless work of art, perfect for any space or occasion.
           </p>
-          <Link href={'/products/words'}>
+          <Link href={'/words'}>
             <button className='btn' type='button' style={{"width" : "100px"}}>Explore Our Collection</button>
           </Link>
         </div>

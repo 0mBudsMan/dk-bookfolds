@@ -41,7 +41,7 @@ const Home = () => {
       <div className='products-outer-container'>
         <div className='subtitle'>
           <span>PRODUCTS</span>
-          <h2>Check What We Have</h2>
+          <h2>Checkout Our Collection</h2>
         </div>
         <Swiper
           breakpoints={{

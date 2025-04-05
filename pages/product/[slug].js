@@ -37,6 +37,8 @@ const useStateContext = () => {
 };
 
 const ClassyProductDetails = ({ product }) => {
+
+  console.log(product)
   const { name, details, care, priceoriginal, pricediscounted, img, dimensions } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd } = useStateContext();
@@ -118,6 +120,14 @@ const ClassyProductDetails = ({ product }) => {
               {dimensions}
             </p>
           </div>
+          <div style={{ textAlign: "center" , "display" : "flex" , "gap" : "10px" , "marginBottom" : "15px"}}>
+          <h3 style={{ textDecoration: "line-through", marginRight: "8px", color: "#888" }}>
+          ₹{product.priceoriginal}
+          </h3>
+          <h3 style={{ fontWeight: "bold", color: "#000" }}>
+          ₹{product.pricediscounted}
+          </h3>
+        </div>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px' }}>
             <h3 style={{ marginRight: '20px', fontSize: '1.2em' }}>Quantity: </h3>
             <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #000' }}>

@@ -19,12 +19,12 @@ const HeroBanner = () => {
         </div>
         <div className='header-left-side'>
             <div className='header-content'>
-                <span>Dhruv Karena&apos;s </span>
+                <h2>Dhruv Karena&apos;s </h2>
                 <h1>Folded Wonders</h1>
                 <h2>India's First Bookfolding Webstore</h2>
                 <h2>Where Books Become Timeless Art</h2>
                 {/* <p>Unique Book Art Creations</p> */}
-                <Link href='/products/words'>
+                <Link href='/words'>
                      <button className='btn' type='button'><CgShoppingCart size={26} />  Start Shopping</button>
                 </Link>
             </div>

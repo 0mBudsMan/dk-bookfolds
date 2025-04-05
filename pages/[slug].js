@@ -7,8 +7,11 @@ import ShippingPolicy from '../components/ShippingPolicy';
 import About from '../components/About';
 import RefundPolicy from '../components/RefundPolicy';
 const Page = () => {
+
   const router = useRouter();
   const { slug } = router.query;
+
+  console.log(slug)
 
   const [subcategory, setSubcategory] = useState("name"); 
 
@@ -36,7 +39,10 @@ const Page = () => {
     const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
     return <EmblaCarousel product={filteredProducts[0]} />;
   }
+
+
   let filteredProducts = [];
+
   if (slug === "customised") {
     filteredProducts = products.filter((p) => p.category.toLowerCase() === subcategory);
   } else {
@@ -50,10 +56,10 @@ const Page = () => {
   }
   
   if (slug === "customised") {
-    
 
     return (
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px' }}>
+        
         <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginBottom: '24px' }}>
           <button
             style={{
@@ -98,17 +104,18 @@ const Page = () => {
             Date
           </button>
         </div>
-        {console.log(filteredProducts)}
         <EmblaCarousel product={filteredProducts[0]} />
         
       </div>
     );
   }
 
-  
+  {console.log("yo")}
 
   return (
+ 
     <div className="Allproducts-container">
+
       {filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
           <AllProducts key={product.name} product={product}/>

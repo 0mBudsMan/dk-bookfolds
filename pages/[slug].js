@@ -22,7 +22,6 @@ const Page = () => {
     }
   }, [slug, router]);
 
-
   if(slug==="shipping-policy"){
     return <ShippingPolicy />
   }
@@ -34,13 +33,6 @@ const Page = () => {
   if(slug==="refund"){
     return  <RefundPolicy />
   }
-
-  if (slug === "portrait") {
-    const filteredProducts = products.filter((p) => p.category.toLowerCase() === slug);
-    return <EmblaCarousel product={filteredProducts[0]} />;
-  }
-
-
   let filteredProducts = [];
 
   if (slug === "customised") {

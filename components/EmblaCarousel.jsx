@@ -22,9 +22,12 @@ const ClassyProductDetails = ({ product }) => {
   const { decQty, incQty, qty, onAdd } = useStateContext();
 
   const imagePaths = ["por1.jpg", "por2.jpg", "por3.jpg"]
-  const imagePathsName = ["name/1.jpg", "name/2.jpg", "name/3.jpg", "name/4.jpg", "name/5.jpg", "name/6.jpg", "name/7.jpg" , "name/8.jpg"]
+
+  const imagePathsName = ["name/1.jpg", "name/2.jpg", "name/3.jpg", "name/4.jpg", "name/5.jpg", "name/6.jpg", "name/7.jpg"]
   const imagePathInitals = ["initials/1.jpg", "initials/2.jpg", "initials/3.jpg", "initials/4.jpg"]
   const imagePathDate = ["date/1.jpg", "date/2.jpg", "date/3.jpg", "date/4.jpg", "date/5.jpg", "date/6.jpg", "date/7.jpg",]
+
+
   const whatsappNumber = '918320863774';
   const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in the product: ${encodeURIComponent(name)}. Link of the product is: https://dk-bookfolds.vercel.app/product/${name.toLowerCase().replace(/\s+/g, '-')}`;
 
@@ -78,6 +81,7 @@ const ClassyProductDetails = ({ product }) => {
             options={OPTIONS} 
             slides={category === "Portrait" ? imagePaths : category === "Name" ? imagePathsName : category==="Initials" ? imagePathInitals : imagePathDate} 
         />
+
 
         <div style={{ flex: '1 1 500px', justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
           <h1 style={{ 
@@ -233,8 +237,6 @@ const useStateContext = () => {
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
-
-  console.log(props)
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200)
   useEffect(() => {
@@ -268,6 +270,7 @@ const EmblaCarousel = (props) => {
             height: 'auto', 
             maxHeight : "350px",
              border: '1px solid #000',
+
             marginLeft: windowWidth <= 768 ? '0' : '100px',
                     marginRight: windowWidth <= 768 ? '0' : '100px',
           }} />

@@ -74,11 +74,11 @@ const ClassyProductDetails = ({ product }) => {
   let displayDiscounted = pricediscounted;
   if (product.category === 'Logo') {
     if (dimCur === 23) {
-      displayOriginal = 7999;
-      displayDiscounted = 6999;
+      displayOriginal = 8999;
+      displayDiscounted = 9999;
     } else if (dimCur === 30) {
-      displayOriginal = 11999;
-      displayDiscounted = 10999;
+      displayOriginal = 12999;
+      displayDiscounted = 13999;
     }
   }
 
